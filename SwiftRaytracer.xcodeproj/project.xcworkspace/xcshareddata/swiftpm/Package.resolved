@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "SwiftMicroPNG",
+        "repositoryURL": "https://github.com/rbruinier/SwiftMicroPNG",
+        "state": {
+          "branch": "main",
+          "revision": "11aaff26330b70e269dcd8b71aa0080d76af9444",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

@@ -1,0 +1,450 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E10E21A626ECE1F0004DC2DC /* Sphere.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10E21A526ECE1F0004DC2DC /* Sphere.swift */; };
+		E10E21AC26ECE43F004DC2DC /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10E21AB26ECE43F004DC2DC /* Scene.swift */; };
+		E10E21AE26EDEC8E004DC2DC /* Intersection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10E21AD26EDEC8E004DC2DC /* Intersection.swift */; };
+		E10E21B026EE36A8004DC2DC /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10E21AF26EE36A8004DC2DC /* Camera.swift */; };
+		E11081C026DF62520082AFF1 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11081BF26DF62520082AFF1 /* main.swift */; };
+		E1138AFC26F4907000F7B653 /* Ray.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1138AFB26F4907000F7B653 /* Ray.swift */; };
+		E1138AFF26F491D200F7B653 /* Lambertian.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1138AFE26F491D200F7B653 /* Lambertian.swift */; };
+		E1138B0126F491E700F7B653 /* Metal.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1138B0026F491E700F7B653 /* Metal.swift */; };
+		E1138B0326F4920200F7B653 /* Dialectric.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1138B0226F4920200F7B653 /* Dialectric.swift */; };
+		E1138B0526F4927100F7B653 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1138B0426F4927100F7B653 /* Globals.swift */; };
+		E119068226E6523200343D4D /* Vector2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E119068126E6523200343D4D /* Vector2.swift */; };
+		E11DA26B26F4E5F100B5B5BA /* GlassAndGoldenSpheresScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11DA26A26F4E5F100B5B5BA /* GlassAndGoldenSpheresScene.swift */; };
+		E11DA26D26F5193200B5B5BA /* PNGExport.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11DA26C26F5193200B5B5BA /* PNGExport.swift */; };
+		E14A415726E39C430024273B /* MicroPNG in Frameworks */ = {isa = PBXBuildFile; productRef = E14A415626E39C430024273B /* MicroPNG */; };
+		E14A415926E3EA500024273B /* Material.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14A415826E3EA500024273B /* Material.swift */; };
+		E1974B2226E0FCFE00CEBB64 /* Raytracer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1974B2126E0FCFE00CEBB64 /* Raytracer.swift */; };
+		E1974B2426E0FD0600CEBB64 /* Vector3.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1974B2326E0FD0600CEBB64 /* Vector3.swift */; };
+		E1974B2626E1576300CEBB64 /* Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1974B2526E1576300CEBB64 /* Random.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E11081BA26DF62520082AFF1 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E10E21A526ECE1F0004DC2DC /* Sphere.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sphere.swift; sourceTree = "<group>"; };
+		E10E21AB26ECE43F004DC2DC /* Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
+		E10E21AD26EDEC8E004DC2DC /* Intersection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intersection.swift; sourceTree = "<group>"; };
+		E10E21AF26EE36A8004DC2DC /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
+		E11081BC26DF62520082AFF1 /* SwiftRaytracer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftRaytracer; sourceTree = BUILT_PRODUCTS_DIR; };
+		E11081BF26DF62520082AFF1 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		E1138AFB26F4907000F7B653 /* Ray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ray.swift; sourceTree = "<group>"; };
+		E1138AFE26F491D200F7B653 /* Lambertian.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lambertian.swift; sourceTree = "<group>"; };
+		E1138B0026F491E700F7B653 /* Metal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Metal.swift; sourceTree = "<group>"; };
+		E1138B0226F4920200F7B653 /* Dialectric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dialectric.swift; sourceTree = "<group>"; };
+		E1138B0426F4927100F7B653 /* Globals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
+		E119068126E6523200343D4D /* Vector2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vector2.swift; sourceTree = "<group>"; };
+		E11DA26A26F4E5F100B5B5BA /* GlassAndGoldenSpheresScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassAndGoldenSpheresScene.swift; sourceTree = "<group>"; };
+		E11DA26C26F5193200B5B5BA /* PNGExport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PNGExport.swift; sourceTree = "<group>"; };
+		E14A415826E3EA500024273B /* Material.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Material.swift; sourceTree = "<group>"; };
+		E1974B2126E0FCFE00CEBB64 /* Raytracer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Raytracer.swift; sourceTree = "<group>"; };
+		E1974B2326E0FD0600CEBB64 /* Vector3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vector3.swift; sourceTree = "<group>"; };
+		E1974B2526E1576300CEBB64 /* Random.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Random.swift; sourceTree = "<group>"; };
+		E1974B2726E1611A00CEBB64 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E11081B926DF62520082AFF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E14A415726E39C430024273B /* MicroPNG in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E10E21A726ECE405004DC2DC /* Intersectables */ = {
+			isa = PBXGroup;
+			children = (
+				E10E21A526ECE1F0004DC2DC /* Sphere.swift */,
+			);
+			path = Intersectables;
+			sourceTree = "<group>";
+		};
+		E10E21A826ECE417004DC2DC /* Math */ = {
+			isa = PBXGroup;
+			children = (
+				E1974B2326E0FD0600CEBB64 /* Vector3.swift */,
+				E119068126E6523200343D4D /* Vector2.swift */,
+			);
+			path = Math;
+			sourceTree = "<group>";
+		};
+		E10E21A926ECE420004DC2DC /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				E1974B2526E1576300CEBB64 /* Random.swift */,
+				E1138B0426F4927100F7B653 /* Globals.swift */,
+				E11DA26C26F5193200B5B5BA /* PNGExport.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		E10E21AA26ECE429004DC2DC /* Raytracer */ = {
+			isa = PBXGroup;
+			children = (
+				E10E21A726ECE405004DC2DC /* Intersectables */,
+				E1138AFD26F491BE00F7B653 /* Material */,
+				E1974B2126E0FCFE00CEBB64 /* Raytracer.swift */,
+				E10E21AB26ECE43F004DC2DC /* Scene.swift */,
+				E10E21AD26EDEC8E004DC2DC /* Intersection.swift */,
+				E10E21AF26EE36A8004DC2DC /* Camera.swift */,
+				E1138AFB26F4907000F7B653 /* Ray.swift */,
+			);
+			path = Raytracer;
+			sourceTree = "<group>";
+		};
+		E11081B326DF62520082AFF1 = {
+			isa = PBXGroup;
+			children = (
+				E11DA26E26F51B2600B5B5BA /* Doc */,
+				E1974B2726E1611A00CEBB64 /* README.md */,
+				E11081BE26DF62520082AFF1 /* SwiftRaytracer */,
+				E11081BD26DF62520082AFF1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E11081BD26DF62520082AFF1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E11081BC26DF62520082AFF1 /* SwiftRaytracer */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E11081BE26DF62520082AFF1 /* SwiftRaytracer */ = {
+			isa = PBXGroup;
+			children = (
+				E11DA26926F4E5C300B5B5BA /* Scenes */,
+				E10E21A926ECE420004DC2DC /* Tools */,
+				E10E21A826ECE417004DC2DC /* Math */,
+				E10E21AA26ECE429004DC2DC /* Raytracer */,
+				E11081BF26DF62520082AFF1 /* main.swift */,
+			);
+			path = SwiftRaytracer;
+			sourceTree = "<group>";
+		};
+		E1138AFD26F491BE00F7B653 /* Material */ = {
+			isa = PBXGroup;
+			children = (
+				E14A415826E3EA500024273B /* Material.swift */,
+				E1138B0226F4920200F7B653 /* Dialectric.swift */,
+				E1138B0026F491E700F7B653 /* Metal.swift */,
+				E1138AFE26F491D200F7B653 /* Lambertian.swift */,
+			);
+			path = Material;
+			sourceTree = "<group>";
+		};
+		E11DA26926F4E5C300B5B5BA /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				E11DA26A26F4E5F100B5B5BA /* GlassAndGoldenSpheresScene.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		E11DA26E26F51B2600B5B5BA /* Doc */ = {
+			isa = PBXGroup;
+			children = (
+				E11DA26F26F51B3200B5B5BA /* Images */,
+			);
+			path = Doc;
+			sourceTree = "<group>";
+		};
+		E11DA26F26F51B3200B5B5BA /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E11081BB26DF62520082AFF1 /* SwiftRaytracer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E11081C326DF62520082AFF1 /* Build configuration list for PBXNativeTarget "SwiftRaytracer" */;
+			buildPhases = (
+				E11081B826DF62520082AFF1 /* Sources */,
+				E11081B926DF62520082AFF1 /* Frameworks */,
+				E11081BA26DF62520082AFF1 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftRaytracer;
+			packageProductDependencies = (
+				E14A415626E39C430024273B /* MicroPNG */,
+			);
+			productName = SwiftRaytracer;
+			productReference = E11081BC26DF62520082AFF1 /* SwiftRaytracer */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E11081B426DF62520082AFF1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					E11081BB26DF62520082AFF1 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = E11081B726DF62520082AFF1 /* Build configuration list for PBXProject "SwiftRaytracer" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E11081B326DF62520082AFF1;
+			packageReferences = (
+				E14A415526E39C430024273B /* XCRemoteSwiftPackageReference "SwiftMicroPNG" */,
+			);
+			productRefGroup = E11081BD26DF62520082AFF1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E11081BB26DF62520082AFF1 /* SwiftRaytracer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E11081B826DF62520082AFF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E10E21AE26EDEC8E004DC2DC /* Intersection.swift in Sources */,
+				E1138B0126F491E700F7B653 /* Metal.swift in Sources */,
+				E11DA26D26F5193200B5B5BA /* PNGExport.swift in Sources */,
+				E11DA26B26F4E5F100B5B5BA /* GlassAndGoldenSpheresScene.swift in Sources */,
+				E1974B2226E0FCFE00CEBB64 /* Raytracer.swift in Sources */,
+				E1138AFF26F491D200F7B653 /* Lambertian.swift in Sources */,
+				E119068226E6523200343D4D /* Vector2.swift in Sources */,
+				E1138B0326F4920200F7B653 /* Dialectric.swift in Sources */,
+				E1974B2626E1576300CEBB64 /* Random.swift in Sources */,
+				E1974B2426E0FD0600CEBB64 /* Vector3.swift in Sources */,
+				E1138B0526F4927100F7B653 /* Globals.swift in Sources */,
+				E10E21AC26ECE43F004DC2DC /* Scene.swift in Sources */,
+				E10E21B026EE36A8004DC2DC /* Camera.swift in Sources */,
+				E14A415926E3EA500024273B /* Material.swift in Sources */,
+				E10E21A626ECE1F0004DC2DC /* Sphere.swift in Sources */,
+				E1138AFC26F4907000F7B653 /* Ray.swift in Sources */,
+				E11081C026DF62520082AFF1 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		E11081C126DF62520082AFF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E11081C226DF62520082AFF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		E11081C426DF62520082AFF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W99FDWBJ4Y;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		E11081C526DF62520082AFF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W99FDWBJ4Y;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GCC_OPTIMIZATION_LEVEL = fast;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_DISABLE_SAFETY_CHECKS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E11081B726DF62520082AFF1 /* Build configuration list for PBXProject "SwiftRaytracer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E11081C126DF62520082AFF1 /* Debug */,
+				E11081C226DF62520082AFF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E11081C326DF62520082AFF1 /* Build configuration list for PBXNativeTarget "SwiftRaytracer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E11081C426DF62520082AFF1 /* Debug */,
+				E11081C526DF62520082AFF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E14A415526E39C430024273B /* XCRemoteSwiftPackageReference "SwiftMicroPNG" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rbruinier/SwiftMicroPNG";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E14A415626E39C430024273B /* MicroPNG */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E14A415526E39C430024273B /* XCRemoteSwiftPackageReference "SwiftMicroPNG" */;
+			productName = MicroPNG;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = E11081B426DF62520082AFF1 /* Project object */;
+}
