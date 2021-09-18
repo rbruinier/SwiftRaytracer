@@ -14,7 +14,7 @@ public struct Dialectric: Material {
         let sinTheta = (1.0 - cosTheta * cosTheta).squareRoot();
 
         if (refractionRatio * sinTheta > 1.0)
-            ||  (Self.reflectance(cosine: cosTheta, refractionRatio: refractionRatio) > random.double()) {
+            ||  (Self.reflectance(cosine: cosTheta, refractionRatio: refractionRatio) > random.fastDouble()) {
             let reflected = Vector3.reflect(a: ray.direction.normalized, b: intersection.normal)
 
             return (scatterRay: Ray(origin: intersection.position, direction: reflected), attenuation: .init(1))

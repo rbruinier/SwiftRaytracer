@@ -29,8 +29,8 @@ public struct Raytracer {
                 var combinedColor = Color3()
 
                 for _ in 0 ..< numberOfSamples {
-                    let u: Double = (Double(x) + random.double()) * deltaU
-                    let v: Double = 1.0 - ((Double(y) + random.double()) * deltaV)
+                    let u: Double = (Double(x) + random.fastDouble()) * deltaU
+                    let v: Double = 1.0 - ((Double(y) + random.fastDouble()) * deltaV)
 
                     let ray = scene.camera.getRay(u: u, v: v, random: random)
 

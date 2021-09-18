@@ -34,12 +34,20 @@ public final class Random {
     }
 
     public func double() -> Double {
+        return Double.random(in: 0 ... 1, using: &generator)
+    }
+
+    public func double(min: Double, max: Double) -> Double {
+        return Double.random(in: min ... max)
+    }
+
+    public func fastDouble() -> Double {
         doublePoolIndex = (doublePoolIndex + 1) & 0x1FFFF
 
         return doublePool[doublePoolIndex]
     }
 
-    public func double(min: Double, max: Double) -> Double {
+    public func fastDouble(min: Double, max: Double) -> Double {
         return min + ((max - min) * double())
     }
 
