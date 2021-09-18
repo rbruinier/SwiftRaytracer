@@ -8,8 +8,8 @@ Work in progress.
 
 Uses as many cores as available to speed up rendering. Image is split up vertically in slices:
 
-number of slices = number of cores
-slice height = image height / number of slices
+* number of slices = number of cores
+* slice height = image height / number of slices
 
 ## Randomizer
 
